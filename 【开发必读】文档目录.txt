@@ -1,0 +1,162 @@
+
+--------------用心做站，做不一样的站--------------
+==========================================================
+
+
+基于店铺管理文件（shops_index.html）撰写根目录
+
+
+
+系统首页
+	地图展示	home.html
+	首页	index.html
+
+商品管理
+	添加商品	add_product.html
+	分类管理	Brand_Manage.html(有公用文件)
+		添加分类Add_Brand.html
+		品牌详情Brand_detailed.html
+	商品列表	Products.html
+	商品管理	Columns.html(有公用文件)
+
+交易管理
+	订单管理	Order_form.html
+		订单详情Order_detailed.html
+	退款管理	Refund.html
+		退款详情Refund_detailed.html
+	交易统计	Order.html
+	订单处理	Brand_Manage2.html(有公用文件)
+	物流管理	Order_Logistics.html
+	订单统计	Order_Chart.html
+
+支付管理
+	支付管理	payment_method.html
+		支付详情Payment_details.html
+	支付配置	Payment_Configure.html
+
+系统管理
+	栏目设置	system_columns.html
+	自定页面	form_builder.html
+	系统设置	system_info.html
+	系统日志	rizhi_list.html
+
+文章管理
+	文章列表	Article_list.html
+		添加文章add_Article.html
+
+管理员
+	权限设置	admin_Competence.html
+		添加权限add_Competence.html
+	管理员设置	administrator_list.html
+	管理员信息	Personal_info.html
+
+会员管理
+	会员列表	member_list.html
+
+报表管理
+	访问统计	无
+	业绩统计	无
+
+广告管理
+	广告列表	Advertising_list.html
+	广告分类	Advertising_sort.html
+		查看advert_detailed_left.html
+
+单页管理
+	商城列表	page_list.html
+		添加单页add_Singlepag.html
+
+前端管理
+	栏目管理	Columns2.html(有公用文件)
+
+留言管理	
+	留言反馈	feedback.html
+	消息通知	Notice.html（无）
+
+
+通用模板	interface.html
+后台登录	login.html
+订单详情页		Order_detaileds.html	
+添加文章		Single_page_add.html
+
+
+
+
+------数据库设计草稿------
+==========================================================
+会员相关
+	注册/登录add_member
+		编号id
+		手机号phone
+		邮箱email
+		密码pass
+	个人信息message_member
+		编号id
+		邮箱email
+		昵称nickname
+		真实姓名user
+		性别sex
+		出生日期年birthday_year
+		出生日期月birthday_month
+		出生日期日birthday_day
+		地区省级province
+		地区市级city
+		地区区县级county
+
+		
+
+管理员相关
+	添加add_administrator
+		编号id	
+		用户名user
+		密码pass
+		手机号phone
+		邮箱email
+		IP地址ip
+		角色role
+		加入时间addtime
+	
+	个人信息message_administrator
+		编号id
+		真实姓名user
+		年龄age
+		QQ号qq
+
+
+商品相关
+	添加add_goods
+		编号id
+		商品名称goods_name
+		商品描述goods_describe
+		商品关键字goods_keyword
+		选择分类cat_id
+	        //商品类型type(暂不考虑)
+		商品原价original_price
+		商品现价now_price
+		库存goods_num
+		商品规格goods_norm
+		商品主图goods_img
+		商品介绍goods_introduce
+	商品附图goods_img
+		编号id
+		商品id goods_id
+		附图名字goods_img
+		
+		
+		
+		
+		
+		
+	
+		
+
+		
+
+
+
+
+
+
+
+
+	
